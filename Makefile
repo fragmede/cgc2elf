@@ -6,11 +6,11 @@ INSTALLDIR=$(DESTDIR)/usr
 
 INCLUDES+=-I/usr/include
 DEBUG+=-g
-WARNS+=-Wall -W -Werror -Wno-unused-parameter -Wno-unused-function -Wno-unused-variable
+WARNS+=-Wall -W -Wno-unused-parameter -Wno-unused-function -Wno-unused-variable
 CFLAGS+=$(WARNS) -O $(DEBUG) $(INCLUDES)
 LDFLAGS+=-O -g
 
-all: $(TARGET) $(MAN)
+all: $(TARGET)
 
 install:
 	install -d $(INSTALLDIR)/bin
